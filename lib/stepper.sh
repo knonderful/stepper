@@ -144,7 +144,7 @@ function stepper_execute() {
         stepper_print "  Stderr: ${stdout_file}"
       fi
     else
-      stepper_print "  Stderr  : ${stderr_file}"
+      stepper_print "  Stderr: ${stderr_file}"
     fi
 
     result=0
