@@ -31,15 +31,15 @@ Each step is specifically added before any of the steps get executed.
 A step is consists of:
 
 * A name.
-** This is used in case the execution fails and the user wants to resume from the last step.
+..* This is used in case the execution fails and the user wants to resume from the last step.
 * A message.
-** This is a small text that is displayed to the user when the step is started.
+..* This is a small text that is displayed to the user when the step is started.
 * A standard-output redirect.
-** This is the file to which the standard output will be written.
+..* This is the file to which the standard output will be written.
 * An error-output redirect.
-** This is the file to which the error output will be written.
+..* This is the file to which the error output will be written.
 * A command.
-** This is the command that will be executed for the step.
+..* This is the command that will be executed for the step.
 
 Once the steps have been defined, they can be executed.
 Stepper will execute them in sequence and will present the user with only the relevant information.
