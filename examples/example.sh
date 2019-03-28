@@ -30,10 +30,10 @@ fi
 RESUME_STEP="${2}"
 
 # Define the steps
-#                Name             Message                               Command                                              Stdout                 Stderr
+#                Name             Message                               Command                                                          Stdout                 Stderr
 stepper_add_step "list_stuff"     "Listing stuff."                      "echo 'hello world' && ls -la && touch ${WORKDIR}/touched.file"  ${WORKDIR}/stdout.log  ${WORKDIR}/stderr.log
 stepper_add_step "call_internal"  "Calling an internal function."       "fn_test"
-stepper_add_step "call_internal2" "Calling an internal function again." "fn_test && doamso"                                  ${WORKDIR}/logfile.txt
+stepper_add_step "call_internal2" "Calling an internal function again." "fn_test && doamso"                                              ${WORKDIR}/logfile.txt
 
 # Enable showing of the commands that are executed for each step (this is optional; default is hidden).
 #stepper_show_commands
